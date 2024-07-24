@@ -15,8 +15,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '22'
-      - name: Build JAR
-        run: java jar javaproject.jar
       - name: Clean cache
         run: docker builder prune --force
       - name: Force remove
