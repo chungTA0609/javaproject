@@ -20,7 +20,7 @@ jobs:
       - name: Login to docker hub
         run: docker login -u chunglnt0609 -p 6Linh@24012000
       - name: Build docker image
-        run: docker build -t chunglnt0609/javaproject .
+        run: docker build --no-cache -t chunglnt0609/javaproject .
       - name: Publish image to docker hub
         run: docker push chunglnt0609/javaproject:latest
 
