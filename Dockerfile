@@ -5,10 +5,10 @@ FROM openjdk:12-jdk-alpine
 WORKDIR /app
 
 # Copy the project’s build file to the container (assuming the build file is named "app.jar")
-COPY target/app.jar /app/app.jar
+COPY target/chunglnt0609/javaproject.jar /app/javaproject.jar
 
 # Expose port 8080 to the outside world
 EXPOSE 8081
 
 # Set the startup command to run the Spring Boot application
-ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+ENTRYPOINT ["java", "-jar", "/app/chunglnt0609/javaproject.jar"]
